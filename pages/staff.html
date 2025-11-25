@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members of Executive Board - SDU University</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #2c3e50;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .page-title {
+            text-align: left;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+            font-weight: 700;
+        }
+
+        .page-intro {
+            text-align: left;
+            margin-bottom: 3rem;
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .section-title {
+            font-size: 1.75rem;
+            color: #1a1a1a;
+            margin: 4rem 0 1.5rem 0;
+            text-align: left;
+            padding-bottom: 0.8rem;
+            border-bottom: 3px solid #0066cc;
+            font-weight: 600;
+        }
+
+        .section-description {
+            text-align: left;
+            color: #666;
+            margin-bottom: 2.5rem;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .rector-section {
+            margin-bottom: 4rem;
+        }
+
+        .rector-container {
+            display: flex;
+            justify-content: center;
+            max-width: 450px;
+            margin: 0 auto;
+        }
+
+        .rector-card {
+            max-width: 450px;
+        }
+
+        .rector-card .staff-photo {
+            height: 400px;
+        }
+
+        .executive-section,
+        .deans-section,
+        .directors-section {
+            margin-bottom: 4rem;
+        }
+
+        .staff-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        .staff-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .staff-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .staff-photo {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            background-color: #f5f5f5;
+            display: block;
+        }
+
+        .staff-info {
+            padding: 1.8rem 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .staff-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 0.8rem;
+            line-height: 1.4;
+        }
+
+        .staff-position {
+            color: #555;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+
+        .staff-email {
+            color: #0066cc;
+            font-size: 0.9rem;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: auto;
+            word-break: break-word;
+        }
+
+        .staff-email:hover {
+            color: #0052a3;
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .staff-grid {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                gap: 2rem;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .page-title {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            .section-description {
+                text-align: center;
+            }
+
+            main {
+                padding: 2rem 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .staff-grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            main {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SDU University</h1>
+        <p>Members of Executive Board</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="announce.html">Announcements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="page-title">Members of Executive Board</h2>
+        <p class="page-intro">Leadership team of SDU University</p>
+
+        <section class="rector-section">
+            <h3 class="section-title">Rector</h3>
+            <div class="rector-container">
+                <article class="staff-card rector-card">
+                    <img src="img/alimzhan-igenbayev-img.jpg" alt="Alimzhan Igenbayev" class="staff-photo">
+                    <div class="staff-info">
+                        <h3 class="staff-name">Igenbayev Alimzhan</h3>
+                        <p class="staff-position">Rector of SDU University</p>
+                        <a href="mailto:alimzhan.igenbayev@sdu.edu.kz" class="staff-email">alimzhan.igenbayev@sdu.edu.kz</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="executive-section">
+            <h3 class="section-title">Executive Deputy-Rectors and Vice-Rectors</h3>
+            <p class="section-description">The executive team responsible for strategic management and administration of the university</p>
+            <div class="staff-grid">
+                <article class="staff-card">
+                    <img src="img/davronzhon-gaipov-img.jpg" alt="Davronzhon Gaipov" class="staff-photo">
+                    <div class="staff-info">
+                        <h3 class="staff-name">Gaipov Davronzhon</h3>
+                        <p class="staff-position">PhD, Executive Deputy-Rector</p>
+                        <a href="mailto:davronzhon.gaipov@sdu.edu.kz" class="staff-email">davronzhon.gaipov@sdu.edu.kz</a>
+                    </div>
+                </article>
+
+                <article class="staff-card">
+                    <img src="img/andrey-bogdanchikov-img.jpg" alt="Andrey Bogdanchikov" class="staff-photo">
+                    <div class="staff-info">
+                        <h3 class="staff-name">Bogdanchikov Andrey</h3>
+                        <p class="staff-position">PhD, Vice Rector for Strategic Development and Digitalization</p>
+                        <a href="mailto:andrey.bogdanchikov@sdu.edu.kz" class="staff-email">andrey.bogdanchikov@sdu.edu.kz</a>
+                    </div>
+                </article>
+
+                <article class="staff-card">
+                    <img src="img/nurken-akimov-img.jpg" alt="Nurken Akimov" class="staff-photo">
+                    <div class="staff-info">
+                        <h3 class="staff-name">Akimov Nurken</h3>
+                        <p class="staff-position">MA, Vice Rector for Administrative Affairs</p>
+                        <a href="mailto:nurken.akimov@sdu.edu.kz" class="staff-email">nurken.akimov@sdu.edu.kz</a>
+                    </div>
+                </article>
+
+                <article class="staff-card">
+                    <img src="img/maksat-kalybek-img.jpg" alt="Maksat Kalybek" class="staff-photo">
+                    <div class="staff-info">
+                        <h3 class="staff-name">Kalybek Maksat</h3>
+                        <p class="staff-position">PhD, Vice Rector for Scientific Research</p>
+                        <a href="mailto:maksat.kalybek@sdu.edu.kz" class="staff-email">maksat.kalybek@sdu.edu.kz</a>
+                    </div>
+                </article>
+
+                <article class="staff-card">
+                    <img src="img/ibragimov-muhammedali-img.jpg" alt="Muhammedali Ibragimov" class="staff-photo">
+                    <div class="staff-info">
+                        <h3 class="staff-name">Muhammedali Ibragimov</h3>
+                        <p class="staff-position">MA, Vice Rector for Social Development</p>
+                        <a href="mailto:muhammedali.ibragimov@sdu.edu.kz" class="staff-email">muhammedali.ibragimov@sdu.edu.kz</a>
+                    </div>
+                </article>
+
+                <article class="staff-card">
+                    <img src="img/abzal-orazaliyev-img.jpg" alt="Abzal Orazaliyev" class="staff-photo">
+                    <div class="staff-info">
+                        <h3 class="staff-name">Orazaliyev Abzal</h3>
+                        <p class="staff-position">Vice Rector for Financial Affairs</p>
+                        <a href="mailto:abzal.orazaliyev@sdu.edu.kz" class="staff-email">abzal.orazaliyev@sdu.edu.kz</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="deans-section">
+            <h3 class="section-title">Deans of Schools</h3>
+            <p class="section-description">Heads of academic schools responsible for educational programs and faculty management</p>
+            <div class="staff-grid">
+                <article class="staff-card">
+                    <img src="img/dana-moldabayeva-img.jpg" alt="Dana Moldabayeva" class="staff-photo">
+                    <div class="staff-info">
+                        <h3 class="staff-name">Moldabayeva Dana</h3>
+                        <p class="staff-position">Dean, School of Education and Humanities, PhD</p>
+                        <a href="mailto:dana.moldabayeva@sdu.edu.kz" class="staff-email">dana.moldabayeva@sdu.edu.kz</a>
+                    </div>
+                </article>
+
+                <article class="staff-card">
+                    <img src="img/ramis-ahmedov-img.jpg" alt="Ramis Ahmedov" class="staff-photo">
+                    <div class="staff-info">
+                        <h3 class="staff-name">Ahmedov Ramis</h3>
+                        <p class="staff-position">Dean, School of Information Technologies and Applied Mathematics (SITAM), PhD</p>
+                        <a href="mailto:ramis.ahmedov@sdu.edu.kz" class="staff-email">ramis.ahmedov@sdu.edu.kz</a>
+                    </div>
+                </article>
+
+                <article class="staff-card">
+                    <img src="img/berik-sabdenaliyev-img.jpg" alt="Berik Sabdenaliyev" class="staff-photo">
+                    <div class="staff-info">
+                        <h3 class="staff-name">Sabdenaliyev Berik</h3>
+                        <p class="staff-position">Dean, School of Social Sciences, Business and Law, MA</p>
+                        <a href="mailto:berik.sabdenaliyev@sdu.edu.kz" class="staff-email">berik.sabdenaliyev@sdu.edu.kz</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="directors-section">
+            <h3 class="section-title">Directors and Heads</h3>
+            <p class="section-description">Leaders of centers and administrative offices</p>
+            <div class="staff-grid">
+                <article class="staff-card">
+                    <img src="img/asem-kuanyshbayeva-img.jpg" alt="Asem Kuanyshbayeva" class="staff-photo">
+                    <div class="staff-info">
+                        <h3 class="staff-name">Kuanyshbayeva Asem</h3>
+                        <p class="staff-position">Director of Center of Multidisciplinary Education, PhD</p>
+                        <a href="mailto:asem.kuanyshbayeva@sdu.edu.kz" class="staff-email">asem.kuanyshbayeva@sdu.edu.kz</a>
+                    </div>
+                </article>
+
+                <article class="staff-card">
+                    <img src="img/bek-bazatbekov-img.jpg" alt="Bek Bazatbekov" class="staff-photo">
+                    <div class="staff-info">
+                        <h3 class="staff-name">Bazatbekov Bek</h3>
+                        <p class="staff-position">Head of Rector's Office, MSc</p>
+                        <a href="mailto:bek.bazatbekov@sdu.edu.kz" class="staff-email">bek.bazatbekov@sdu.edu.kz</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SDU University. All rights reserved.</p>
+        <p>Suleyman Demirel University</p>
+    </footer>
+</body>
+</html>
