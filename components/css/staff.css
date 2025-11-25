@@ -1,0 +1,529 @@
+:root {
+  /* Primitive Color Tokens */
+  --color-white: rgba(255, 255, 255, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-cream-50: rgba(252, 252, 249, 1);
+  --color-cream-100: rgba(255, 255, 253, 1);
+  --color-gray-200: rgba(245, 245, 245, 1);
+  --color-gray-300: rgba(167, 169, 169, 1);
+  --color-gray-400: rgba(119, 124, 124, 1);
+  --color-slate-500: rgba(98, 108, 113, 1);
+  --color-brown-600: rgba(94, 82, 64, 1);
+  --color-charcoal-700: rgba(31, 33, 33, 1);
+  --color-charcoal-800: rgba(38, 40, 40, 1);
+  --color-slate-900: rgba(19, 52, 59, 1);
+  --color-teal-300: rgba(50, 184, 198, 1);
+  --color-teal-400: rgba(45, 166, 178, 1);
+  --color-teal-500: rgba(33, 128, 141, 1);
+  --color-teal-600: rgba(29, 116, 128, 1);
+  --color-teal-700: rgba(26, 104, 115, 1);
+  --color-teal-800: rgba(41, 150, 161, 1);
+  --color-red-400: rgba(255, 84, 89, 1);
+  --color-red-500: rgba(192, 21, 47, 1);
+  --color-orange-400: rgba(230, 129, 97, 1);
+  --color-orange-500: rgba(168, 75, 47, 1);
+
+  --color-brown-600-rgb: 94, 82, 64;
+  --color-teal-500-rgb: 33, 128, 141;
+  --color-slate-900-rgb: 19, 52, 59;
+  --color-slate-500-rgb: 98, 108, 113;
+  --color-red-500-rgb: 192, 21, 47;
+  --color-red-400-rgb: 255, 84, 89;
+  --color-orange-500-rgb: 168, 75, 47;
+
+  --color-background: var(--color-cream-50);
+  --color-surface: var(--color-cream-100);
+  --color-text: var(--color-slate-900);
+  --color-text-secondary: var(--color-slate-500);
+  --color-primary: var(--color-teal-500);
+  --color-primary-hover: var(--color-teal-600);
+  --color-primary-active: var(--color-teal-700);
+  --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
+
+  --font-family-base: "FKGroteskNeue", "Geist", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+  --font-size-4xl: 30px;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 550;
+  --font-weight-bold: 600;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+
+  --radius-base: 8px;
+  --radius-lg: 12px;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+
+  --duration-normal: 250ms;
+  --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-gray-400-rgb: 119, 124, 124;
+    --color-teal-300-rgb: 50, 184, 198;
+    --color-gray-300-rgb: 167, 169, 169;
+    --color-gray-200-rgb: 245, 245, 245;
+    --color-background: var(--color-charcoal-700);
+    --color-surface: var(--color-charcoal-800);
+    --color-text: var(--color-gray-200);
+    --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+    --color-primary: var(--color-teal-300);
+    --color-primary-hover: var(--color-teal-400);
+    --color-secondary: rgba(var(--color-gray-400-rgb), 0.15);
+    --color-secondary-hover: rgba(var(--color-gray-400-rgb), 0.25);
+    --color-card-border: rgba(var(--color-gray-400-rgb), 0.2);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-base);
+  line-height: var(--line-height-normal);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  color: var(--color-text);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--duration-normal) var(--ease-standard);
+}
+
+a:hover {
+  color: var(--color-primary-hover);
+}
+
+@font-face {
+  font-family: 'FKGroteskNeue';
+  src: url('https://r2cdn.perplexity.ai/fonts/FKGroteskNeue.woff2') format('woff2');
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-teal-700) 100%);
+  color: var(--color-white);
+  padding: var(--space-20) 0;
+  box-shadow: var(--shadow-lg);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--space-16);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-16);
+}
+
+.logo {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  display: flex;
+  align-items: center;
+  gap: var(--space-12);
+  color: var(--color-white);
+}
+
+.logo-icon {
+  font-size: var(--font-size-4xl);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: var(--space-8);
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--color-white);
+  font-weight: var(--font-weight-medium);
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--radius-base);
+  transition: all var(--duration-normal) var(--ease-standard);
+  font-size: var(--font-size-base);
+}
+
+nav a:hover,
+nav a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Hero Section */
+.staff-hero {
+  background: linear-gradient(135deg, var(--color-teal-500) 0%, var(--color-teal-700) 100%);
+  color: var(--color-white);
+  padding: var(--space-32) 0;
+  text-align: center;
+  margin-bottom: var(--space-32);
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.staff-hero::before {
+  content: '👥';
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  font-size: 200px;
+  opacity: 0.1;
+}
+
+.staff-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.staff-hero h1 {
+  color: var(--color-white);
+  font-size: var(--font-size-4xl);
+  margin-bottom: var(--space-12);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  font-weight: var(--font-weight-bold);
+}
+
+.staff-hero p {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: var(--font-size-xl);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Main Container */
+main {
+  min-height: calc(100vh - 300px);
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--space-16);
+}
+
+/* Section Titles */
+.page-title,
+.section-title {
+  font-size: var(--font-size-3xl);
+  color: var(--color-text);
+  text-align: center;
+  margin-bottom: var(--space-16);
+  position: relative;
+  padding-bottom: var(--space-12);
+  font-weight: var(--font-weight-bold);
+}
+
+.page-title::after,
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--color-primary);
+  border-radius: var(--radius-base);
+}
+
+.page-intro,
+.section-description {
+  text-align: center;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-24);
+  font-size: var(--font-size-base);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Sections */
+.rector-section,
+.executive-section,
+.deans-section,
+.directors-section {
+  margin-bottom: var(--space-32);
+}
+
+/* Rector Container */
+.rector-container {
+  display: flex;
+  justify-content: center;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+/* Staff Grid */
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-24);
+  margin-top: var(--space-20);
+}
+
+/* Staff Card */
+.staff-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--duration-normal) var(--ease-standard);
+  border: 1px solid var(--color-card-border);
+  border-left: 4px solid var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  animation: fadeInUp 0.6s var(--ease-standard);
+}
+
+.staff-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-left-color: var(--color-primary-hover);
+}
+
+.rector-card {
+  border-left-color: var(--color-red-500);
+  box-shadow: var(--shadow-lg);
+  border-left-width: 5px;
+}
+
+.executive-section .staff-card {
+  border-left-color: var(--color-teal-400);
+}
+
+.deans-section .staff-card {
+  border-left-color: var(--color-teal-300);
+}
+
+.directors-section .staff-card {
+  border-left-color: var(--color-slate-900);
+}
+
+/* Staff Photo */
+.staff-photo {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  background-color: var(--color-secondary);
+  display: block;
+  transition: filter var(--duration-normal) var(--ease-standard);
+}
+
+.rector-card .staff-photo {
+  height: 400px;
+}
+
+.staff-card:hover .staff-photo {
+  filter: brightness(1.05);
+}
+
+/* Staff Info */
+.staff-info {
+  padding: var(--space-20) var(--space-16);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  text-align: center;
+}
+
+.staff-name {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin-bottom: var(--space-8);
+}
+
+.staff-position {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-base);
+  margin-bottom: var(--space-12);
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.staff-email {
+  color: var(--color-primary);
+  font-size: var(--font-size-sm);
+  text-decoration: none;
+  display: inline-block;
+  font-weight: var(--font-weight-medium);
+  transition: color var(--duration-normal) var(--ease-standard);
+  word-break: break-word;
+}
+
+.staff-email:hover {
+  color: var(--color-primary-hover);
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: var(--color-slate-900);
+  color: var(--color-white);
+  padding: var(--space-32) 0 var(--space-16);
+  margin-top: var(--space-32);
+}
+
+.footer-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--space-16);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-32);
+  margin-bottom: var(--space-16);
+}
+
+.footer-section h3 {
+  color: var(--color-white);
+  margin-bottom: var(--space-12);
+  font-size: var(--font-size-lg);
+}
+
+.footer-section p,
+.footer-section a {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: var(--space-8);
+  display: block;
+  font-size: var(--font-size-sm);
+}
+
+.footer-section a:hover {
+  color: var(--color-teal-300);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: var(--space-16);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: var(--font-size-sm);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.staff-card:nth-child(1) { animation-delay: 0.1s; }
+.staff-card:nth-child(2) { animation-delay: 0.2s; }
+.staff-card:nth-child(3) { animation-delay: 0.3s; }
+.staff-card:nth-child(4) { animation-delay: 0.4s; }
+.staff-card:nth-child(5) { animation-delay: 0.5s; }
+.staff-card:nth-child(6) { animation-delay: 0.6s; }
+
+/* Responsive */
+@media (max-width: 968px) {
+  .staff-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+  .staff-hero h1 {
+    font-size: var(--font-size-3xl);
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: var(--space-16) 0;
+  }
+  .header-container {
+    flex-direction: column;
+    gap: var(--space-12);
+  }
+  nav ul {
+    justify-content: center;
+    width: 100%;
+  }
+  .staff-hero {
+    padding: var(--space-24) 0;
+  }
+  .staff-hero h1 {
+    font-size: var(--font-size-2xl);
+  }
+  .staff-hero p {
+    font-size: var(--font-size-base);
+  }
+  .staff-grid {
+    grid-template-columns: 1fr;
+  }
+  .staff-photo {
+    height: 300px;
+  }
+  .rector-card .staff-photo {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: var(--font-size-xl);
+  }
+  .staff-hero::before {
+    font-size: 120px;
+  }
+  .staff-hero h1 {
+    font-size: var(--font-size-xl);
+  }
+  .staff-photo {
+    height: 280px;
+  }
+  .rector-card .staff-photo {
+    height: 280px;
+  }
+}
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}

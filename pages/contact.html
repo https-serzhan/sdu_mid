@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SDU University</title>
+    <link rel="stylesheet" href="../components/css/main.css">
+    <link rel="stylesheet" href="../components/css/contact.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">🎓</span>
+                <span>SDU University</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="staff.html">Staff</a></li>
+                    <li><a href="announce.html">Announcements</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="contact-hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with SDU University - We're here to help answer your questions</p>
+        </div>
+    </div>
+
+    <main>
+        <div class="container">
+            <!-- Contact Information & Form Grid -->
+            <div class="contact-container">
+                <!-- Contact Information Cards -->
+                <div class="contact-info-section">
+                    <div class="contact-card phone">
+                        <div class="contact-card-header">
+                            <div class="contact-icon">📞</div>
+                            <h3 class="contact-card-title">Phone</h3>
+                        </div>
+                        <div class="contact-card-content">
+                            <p><strong>Main Line:</strong></p>
+                            <p><a href="tel:+77273079500">+7 (727) 307-9500</a></p>
+                            <p><strong>Admissions Office:</strong></p>
+                            <p><a href="tel:+77273079525">+7 (727) 307-9525</a></p>
+                            <p><strong>International Office:</strong></p>
+                            <p><a href="tel:+77273079530">+7 (727) 307-9530</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card email">
+                        <div class="contact-card-header">
+                            <div class="contact-icon">✉️</div>
+                            <h3 class="contact-card-title">Email</h3>
+                        </div>
+                        <div class="contact-card-content">
+                            <p><strong>General Inquiries:</strong></p>
+                            <p><a href="mailto:info@sdu.edu.kz">info@sdu.edu.kz</a></p>
+                            <p><strong>Admissions:</strong></p>
+                            <p><a href="mailto:admissions@sdu.edu.kz">admissions@sdu.edu.kz</a></p>
+                            <p><strong>International Students:</strong></p>
+                            <p><a href="mailto:international@sdu.edu.kz">international@sdu.edu.kz</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card location">
+                        <div class="contact-card-header">
+                            <div class="contact-icon">📍</div>
+                            <h3 class="contact-card-title">Location</h3>
+                        </div>
+                        <div class="contact-card-content">
+                            <p><strong>Address:</strong></p>
+                            <p>Abylai Khan Street, 1/1</p>
+                            <p>Kaskelen, Almaty Region</p>
+                            <p>Kazakhstan, 040900</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card hours">
+                        <div class="contact-card-header">
+                            <div class="contact-icon">🕐</div>
+                            <h3 class="contact-card-title">Office Hours</h3>
+                        </div>
+                        <div class="contact-card-content">
+                            <p><strong>Monday - Friday:</strong></p>
+                            <p>9:00 AM - 6:00 PM</p>
+                            <p><strong>Saturday:</strong></p>
+                            <p>10:00 AM - 3:00 PM</p>
+                            <p><strong>Sunday:</strong></p>
+                            <p>Closed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2 class="form-title">Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="your.email@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="+7 (___) ___-____">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject *</label>
+                            <select id="subject" name="subject" class="form-control" required>
+                                <option value="">Select a subject</option>
+                                <option value="admissions">Admissions Inquiry</option>
+                                <option value="academic">Academic Information</option>
+                                <option value="international">International Student Services</option>
+                                <option value="financial">Financial Aid</option>
+                                <option value="general">General Question</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="Please describe your inquiry in detail..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Department Contacts Section -->
+            <section class="departments-section">
+                <h2 class="departments-title">Department Contacts</h2>
+                <div class="departments-grid">
+                    <div class="department-card">
+                        <h3 class="department-name">School of Social Sciences, Business and Law</h3>
+                        <div class="department-contact">
+                            <strong>Dean:</strong> Berik Sabdenaliyev, MA
+                            <strong>Email:</strong> <a href="mailto:berik.sabdenaliyev@sdu.edu.kz">berik.sabdenaliyev@sdu.edu.kz</a>
+                            <strong>Phone:</strong> +7 (727) 307-9540
+                            <strong>Office:</strong> Building A, Room 205
+                        </div>
+                    </div>
+
+                    <div class="department-card">
+                        <h3 class="department-name">School of Education and Humanities</h3>
+                        <div class="department-contact">
+                            <strong>Dean:</strong> Dana Moldabayeva, PhD
+                            <strong>Email:</strong> <a href="mailto:dana.moldabayeva@sdu.edu.kz">dana.moldabayeva@sdu.edu.kz</a>
+                            <strong>Phone:</strong> +7 (727) 307-9545
+                            <strong>Office:</strong> Building B, Room 301
+                        </div>
+                    </div>
+
+                    <div class="department-card">
+                        <h3 class="department-name">School of Information Technologies and Applied Mathematics</h3>
+                        <div class="department-contact">
+                            <strong>Dean:</strong> Ramis Ahmedov, PhD
+                            <strong>Email:</strong> <a href="mailto:ramis.ahmedov@sdu.edu.kz">ramis.ahmedov@sdu.edu.kz</a>
+                            <strong>Phone:</strong> +7 (727) 307-9550
+                            <strong>Office:</strong> Building C, Room 108
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Map Section -->
+            <section class="map-section">
+                <h2 class="map-title">Find Us on the Map</h2>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.7574948933877!2d76.62755831549524!3d43.23854897913855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836e85a40fcd6b%3A0x5d5df252e5b1e8a9!2sSuleyman%20Demirel%20University!5e0!3m2!1sen!2skz!4v1732563000000!5m2!1sen!2skz" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About SDU</h3>
+                <p>Suleyman Demirel University is committed to providing world-class education and fostering innovation, research, and academic excellence.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="courses.html">Programs</a>
+                <a href="staff.html">Faculty</a>
+                <a href="announce.html">News</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📍 Kaskelen, Almaty Region, Kazakhstan</p>
+                <p>📞 +7 (727) 307-9500</p>
+                <p>✉️ info@sdu.edu.kz</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SDU University. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Form submission handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            
+            // Show success message
+            alert(`Thank you, ${name}! Your message has been received. We will respond to ${email} within 24-48 hours.`);
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Phone number formatting
+        const phoneInput = document.getElementById('phone');
+        phoneInput.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 0) {
+                if (value.length <= 1) {
+                    value = '+7 (' + value;
+                } else if (value.length <= 4) {
+                    value = '+7 (' + value.substring(1);
+                } else if (value.length <= 7) {
+                    value = '+7 (' + value.substring(1, 4) + ') ' + value.substring(4);
+                } else if (value.length <= 11) {
+                    value = '+7 (' + value.substring(1, 4) + ') ' + value.substring(4, 7) + '-' + value.substring(7);
+                } else {
+                    value = '+7 (' + value.substring(1, 4) + ') ' + value.substring(4, 7) + '-' + value.substring(7, 11);
+                }
+            }
+            e.target.value = value;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcements & News - SDU University</title>
+    <link rel="stylesheet" href="../components/css/main.css">
+    <link rel="stylesheet" href="../components/css/announce.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">🎓</span>
+                <span>SDU University</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="staff.html">Staff</a></li>
+                    <li><a href="announce.html" class="active">Announcements</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="announcements-hero">
+        <div class="container">
+            <h1>Announcements & News</h1>
+            <p>Stay updated with the latest news, events, and important announcements from SDU University</p>
+        </div>
+    </div>
+
+    <main>
+        <div class="container">
+            <!-- Filter Navigation -->
+            <div class="filter-nav">
+                <button class="filter-btn active" data-filter="all">All Announcements</button>
+                <button class="filter-btn" data-filter="academic">Academic</button>
+                <button class="filter-btn" data-filter="event">Events</button>
+                <button class="filter-btn" data-filter="admission">Admissions</button>
+                <button class="filter-btn" data-filter="research">Research</button>
+                <button class="filter-btn" data-filter="general">General</button>
+            </div>
+
+            <!-- Featured Announcement -->
+            <div class="announcement-card featured-announcement">
+                <div class="announcement-header">
+                    <span class="announcement-category">Featured</span>
+                    <div class="announcement-date">
+                        <span class="date-icon">📅</span>
+                        <span>November 20, 2025</span>
+                    </div>
+                </div>
+                <div class="announcement-body">
+                    <h3 class="announcement-title">SDU University Ranks Among Top 100 Universities in Central Asia</h3>
+                    <p class="announcement-excerpt">
+                        We are thrilled to announce that SDU University has been recognized as one of the top 100 universities in Central Asia according to the latest QS Rankings. This achievement reflects our commitment to academic excellence, innovative research, and providing world-class education to our students.
+                    </p>
+                </div>
+                <div class="announcement-footer">
+                    <a href="#" class="read-more">Read Full Story →</a>
+                    <div class="announcement-meta">
+                        <span class="meta-item">👁 1,234 views</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Announcements Grid -->
+            <div class="announcements-grid">
+                <!-- Academic Announcement 1 -->
+                <article class="announcement-card academic" data-category="academic">
+                    <div class="announcement-header">
+                        <span class="announcement-category">Academic</span>
+                        <div class="announcement-date">
+                            <span class="date-icon">📅</span>
+                            <span>November 18, 2025</span>
+                        </div>
+                    </div>
+                    <div class="announcement-body">
+                        <h3 class="announcement-title">Spring 2026 Course Registration Opens December 1st</h3>
+                        <p class="announcement-excerpt">
+                            Registration for Spring 2026 semester courses will begin on December 1st, 2025. Students are advised to meet with their academic advisors before registration to plan their course schedules effectively.
+                        </p>
+                    </div>
+                    <div class="announcement-footer">
+                        <a href="#" class="read-more">Learn More →</a>
+                        <div class="announcement-meta">
+                            <span class="meta-item">👁 856 views</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Event Announcement 1 -->
+                <article class="announcement-card event" data-category="event">
+                    <div class="announcement-header">
+                        <span class="announcement-category">Event</span>
+                        <div class="announcement-date">
+                            <span class="date-icon">📅</span>
+                            <span>November 15, 2025</span>
+                        </div>
+                    </div>
+                    <div class="announcement-body">
+                        <h3 class="announcement-title">Annual International Student Festival - December 10th</h3>
+                        <p class="announcement-excerpt">
+                            Join us for the Annual International Student Festival celebrating cultural diversity! Featuring performances, traditional cuisine, art exhibitions, and cultural presentations from students representing over 40 countries.
+                        </p>
+                    </div>
+                    <div class="announcement-footer">
+                        <a href="#" class="read-more">Event Details →</a>
+                        <div class="announcement-meta">
+                            <span class="meta-item">👁 2,103 views</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Admission Announcement 1 -->
+                <article class="announcement-card admission" data-category="admission">
+                    <div class="announcement-header">
+                        <span class="announcement-category">Admissions</span>
+                        <div class="announcement-date">
+                            <span class="date-icon">📅</span>
+                            <span>November 12, 2025</span>
+                        </div>
+                    </div>
+                    <div class="announcement-body">
+                        <h3 class="announcement-title">2026-2027 Undergraduate Applications Now Open</h3>
+                        <p class="announcement-excerpt">
+                            We are now accepting applications for undergraduate programs for the 2026-2027 academic year. Early application deadline is January 15, 2026. Apply now to secure your place at SDU University!
+                        </p>
+                    </div>
+                    <div class="announcement-footer">
+                        <a href="#" class="read-more">Apply Now →</a>
+                        <div class="announcement-meta">
+                            <span class="meta-item">👁 3,421 views</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Research Announcement 1 -->
+                <article class="announcement-card research" data-category="research">
+                    <div class="announcement-header">
+                        <span class="announcement-category">Research</span>
+                        <div class="announcement-date">
+                            <span class="date-icon">📅</span>
+                            <span>November 10, 2025</span>
+                        </div>
+                    </div>
+                    <div class="announcement-body">
+                        <h3 class="announcement-title">SDU Receives $2M Grant for AI Research in Healthcare</h3>
+                        <p class="announcement-excerpt">
+                            The School of Information Technologies and Applied Mathematics has been awarded a $2 million research grant to develop AI-driven diagnostic tools for early disease detection in collaboration with leading medical institutions.
+                        </p>
+                    </div>
+                    <div class="announcement-footer">
+                        <a href="#" class="read-more">Read More →</a>
+                        <div class="announcement-meta">
+                            <span class="meta-item">👁 1,567 views</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Event Announcement 2 -->
+                <article class="announcement-card event" data-category="event">
+                    <div class="announcement-header">
+                        <span class="announcement-category">Event</span>
+                        <div class="announcement-date">
+                            <span class="date-icon">📅</span>
+                            <span>November 8, 2025</span>
+                        </div>
+                    </div>
+                    <div class="announcement-body">
+                        <h3 class="announcement-title">Career Fair 2025 - Connect with Top Employers</h3>
+                        <p class="announcement-excerpt">
+                            Over 100 leading companies will be present at our annual Career Fair on November 30th. Meet recruiters, explore internship opportunities, and kickstart your professional journey. Open to all students and alumni.
+                        </p>
+                    </div>
+                    <div class="announcement-footer">
+                        <a href="#" class="read-more">Register →</a>
+                        <div class="announcement-meta">
+                            <span class="meta-item">👁 1,892 views</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Academic Announcement 2 -->
+                <article class="announcement-card academic" data-category="academic">
+                    <div class="announcement-header">
+                        <span class="announcement-category">Academic</span>
+                        <div class="announcement-date">
+                            <span class="date-icon">📅</span>
+                            <span>November 5, 2025</span>
+                        </div>
+                    </div>
+                    <div class="announcement-body">
+                        <h3 class="announcement-title">New Master's Program in Data Science Launching Fall 2026</h3>
+                        <p class="announcement-excerpt">
+                            We are excited to introduce our new Master's program in Data Science and Analytics. The program combines advanced statistics, machine learning, and business intelligence to prepare students for high-demand careers.
+                        </p>
+                    </div>
+                    <div class="announcement-footer">
+                        <a href="#" class="read-more">Program Details →</a>
+                        <div class="announcement-meta">
+                            <span class="meta-item">👁 2,345 views</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- General Announcement 1 -->
+                <article class="announcement-card general" data-category="general">
+                    <div class="announcement-header">
+                        <span class="announcement-category">General</span>
+                        <div class="announcement-date">
+                            <span class="date-icon">📅</span>
+                            <span>November 3, 2025</span>
+                        </div>
+                    </div>
+                    <div class="announcement-body">
+                        <h3 class="announcement-title">Library Extended Hours During Exam Period</h3>
+                        <p class="announcement-excerpt">
+                            To support students during the upcoming exam period, the university library will extend its operating hours. From December 5th to December 20th, the library will be open 24/7 with full access to study spaces and resources.
+                        </p>
+                    </div>
+                    <div class="announcement-footer">
+                        <a href="#" class="read-more">View Schedule →</a>
+                        <div class="announcement-meta">
+                            <span class="meta-item">👁 1,234 views</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Research Announcement 2 -->
+                <article class="announcement-card research" data-category="research">
+                    <div class="announcement-header">
+                        <span class="announcement-category">Research</span>
+                        <div class="announcement-date">
+                            <span class="date-icon">📅</span>
+                            <span>October 30, 2025</span>
+                        </div>
+                    </div>
+                    <div class="announcement-body">
+                        <h3 class="announcement-title">Undergraduate Research Symposium - Call for Presentations</h3>
+                        <p class="announcement-excerpt">
+                            Students conducting research are invited to present their work at the Annual Undergraduate Research Symposium on January 25, 2026. This is an excellent opportunity to showcase your research to the academic community.
+                        </p>
+                    </div>
+                    <div class="announcement-footer">
+                        <a href="#" class="read-more">Submit Abstract →</a>
+                        <div class="announcement-meta">
+                            <span class="meta-item">👁 967 views</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Admission Announcement 2 -->
+                <article class="announcement-card admission" data-category="admission">
+                    <div class="announcement-header">
+                        <span class="announcement-category">Admissions</span>
+                        <div class="announcement-date">
+                            <span class="date-icon">📅</span>
+                            <span>October 28, 2025</span>
+                        </div>
+                    </div>
+                    <div class="announcement-body">
+                        <h3 class="announcement-title">Virtual Campus Tour Sessions Every Saturday</h3>
+                        <p class="announcement-excerpt">
+                            Can't visit campus in person? Join our interactive virtual campus tours every Saturday at 10:00 AM. Explore our facilities, meet current students, and get answers to all your questions about life at SDU.
+                        </p>
+                    </div>
+                    <div class="announcement-footer">
+                        <a href="#" class="read-more">Register for Tour →</a>
+                        <div class="announcement-meta">
+                            <span class="meta-item">👁 1,445 views</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- General Announcement 2 -->
+                <article class="announcement-card general" data-category="general">
+                    <div class="announcement-header">
+                        <span class="announcement-category">General</span>
+                        <div class="announcement-date">
+                            <span class="date-icon">📅</span>
+                            <span>October 25, 2025</span>
+                        </div>
+                    </div>
+                    <div class="announcement-body">
+                        <h3 class="announcement-title">New Student Wellness Center Opens on Campus</h3>
+                        <p class="announcement-excerpt">
+                            SDU is proud to announce the opening of our new Student Wellness Center, featuring a modern gym, yoga studio, counseling services, and health clinic. All students have complimentary access to these facilities.
+                        </p>
+                    </div>
+                    <div class="announcement-footer">
+                        <a href="#" class="read-more">Explore Facilities →</a>
+                        <div class="announcement-meta">
+                            <span class="meta-item">👁 2,678 views</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Event Announcement 3 -->
+                <article class="announcement-card event" data-category="event">
+                    <div class="announcement-header">
+                        <span class="announcement-category">Event</span>
+                        <div class="announcement-date">
+                            <span class="date-icon">📅</span>
+                            <span>October 22, 2025</span>
+                        </div>
+                    </div>
+                    <div class="announcement-body">
+                        <h3 class="announcement-title">Tech Innovation Summit 2025 - November 28th</h3>
+                        <p class="announcement-excerpt">
+                            Join industry leaders, entrepreneurs, and innovators at our annual Tech Innovation Summit. Keynote speakers include CEOs from major tech companies, startup founders, and SDU alumni making waves in the tech industry.
+                        </p>
+                    </div>
+                    <div class="announcement-footer">
+                        <a href="#" class="read-more">Get Tickets →</a>
+                        <div class="announcement-meta">
+                            <span class="meta-item">👁 1,789 views</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Academic Announcement 3 -->
+                <article class="announcement-card academic" data-category="academic">
+                    <div class="announcement-header">
+                        <span class="announcement-category">Academic</span>
+                        <div class="announcement-date">
+                            <span class="date-icon">📅</span>
+                            <span>October 20, 2025</span>
+                        </div>
+                    </div>
+                    <div class="announcement-body">
+                        <h3 class="announcement-title">Academic Excellence Awards - Nominations Open</h3>
+                        <p class="announcement-excerpt">
+                            Nominate outstanding faculty members for the Annual Academic Excellence Awards. Categories include Teaching Excellence, Research Innovation, and Community Engagement. Nomination deadline: November 30, 2025.
+                        </p>
+                    </div>
+                    <div class="announcement-footer">
+                        <a href="#" class="read-more">Submit Nomination →</a>
+                        <div class="announcement-meta">
+                            <span class="meta-item">👁 723 views</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About SDU</h3>
+                <p>Suleyman Demirel University is committed to providing world-class education and fostering innovation, research, and academic excellence.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="courses.html">Programs</a>
+                <a href="staff.html">Faculty</a>
+                <a href="announce.html">News</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📍 Kaskelen, Almaty Region, Kazakhstan</p>
+                <p>📞 +7 (727) 307-9500</p>
+                <p>✉️ info@sdu.edu.kz</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SDU University. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const announcementCards = document.querySelectorAll('.announcement-card:not(.featured-announcement)');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                // Filter cards
+                announcementCards.forEach(card => {
+                    if (filterValue === 'all') {
+                        card.style.display = 'flex';
+                    } else {
+                        if (card.getAttribute('data-category') === filterValue) {
+                            card.style.display = 'flex';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
