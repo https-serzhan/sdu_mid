@@ -25,6 +25,7 @@
         </div>
     </header>
 
+
     <div class="contact-hero">
         <div class="container">
             <h1>Contact Us</h1>
@@ -32,11 +33,10 @@
         </div>
     </div>
 
+
     <main>
         <div class="container">
-            <!-- Contact Information & Form Grid -->
             <div class="contact-container">
-                <!-- Contact Information Cards -->
                 <div class="contact-info-section">
                     <div class="contact-card phone">
                         <div class="contact-card-header">
@@ -53,6 +53,7 @@
                         </div>
                     </div>
 
+
                     <div class="contact-card email">
                         <div class="contact-card-header">
                             <div class="contact-icon">✉️</div>
@@ -68,6 +69,7 @@
                         </div>
                     </div>
 
+
                     <div class="contact-card location">
                         <div class="contact-card-header">
                             <div class="contact-icon">📍</div>
@@ -80,6 +82,7 @@
                             <p>Kazakhstan, 040900</p>
                         </div>
                     </div>
+
 
                     <div class="contact-card hours">
                         <div class="contact-card-header">
@@ -97,7 +100,7 @@
                     </div>
                 </div>
 
-                <!-- Contact Form -->
+
                 <div class="contact-form-section">
                     <h2 class="form-title">Send Us a Message</h2>
                     <form id="contactForm">
@@ -106,15 +109,18 @@
                             <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
                         </div>
 
+
                         <div class="form-group">
                             <label for="email" class="form-label">Email Address *</label>
                             <input type="email" id="email" name="email" class="form-control" placeholder="your.email@example.com" required>
                         </div>
 
+
                         <div class="form-group">
                             <label for="phone" class="form-label">Phone Number</label>
                             <input type="tel" id="phone" name="phone" class="form-control" placeholder="+7 (___) ___-____">
                         </div>
+
 
                         <div class="form-group">
                             <label for="subject" class="form-label">Subject *</label>
@@ -129,17 +135,19 @@
                             </select>
                         </div>
 
+
                         <div class="form-group">
                             <label for="message" class="form-label">Message *</label>
                             <textarea id="message" name="message" class="form-control" placeholder="Please describe your inquiry in detail..." required></textarea>
                         </div>
+
 
                         <button type="submit" class="submit-btn">Send Message</button>
                     </form>
                 </div>
             </div>
 
-            <!-- Department Contacts Section -->
+
             <section class="departments-section">
                 <h2 class="departments-title">Department Contacts</h2>
                 <div class="departments-grid">
@@ -153,6 +161,7 @@
                         </div>
                     </div>
 
+
                     <div class="department-card">
                         <h3 class="department-name">School of Education and Humanities</h3>
                         <div class="department-contact">
@@ -162,6 +171,7 @@
                             <strong>Office:</strong> Building B, Room 301
                         </div>
                     </div>
+
 
                     <div class="department-card">
                         <h3 class="department-name">School of Information Technologies and Applied Mathematics</h3>
@@ -175,7 +185,7 @@
                 </div>
             </section>
 
-            <!-- Map Section -->
+
             <section class="map-section">
                 <h2 class="map-title">Find Us on the Map</h2>
                 <div class="map-container">
@@ -189,6 +199,7 @@
             </section>
         </div>
     </main>
+
 
     <footer>
         <div class="footer-content">
@@ -216,24 +227,21 @@
         </div>
     </footer>
 
+
     <script>
-        // Form submission handler
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Get form values
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const subject = document.getElementById('subject').value;
             
-            // Show success message
             alert(`Thank you, ${name}! Your message has been received. We will respond to ${email} within 24-48 hours.`);
             
-            // Reset form
             this.reset();
         });
 
-        // Phone number formatting
+
         const phoneInput = document.getElementById('phone');
         phoneInput.addEventListener('input', function(e) {
             let value = e.target.value.replace(/\D/g, '');

@@ -1,5 +1,4 @@
 :root {
-  /* Primitive Color Tokens */
   --color-white: rgba(255, 255, 255, 1);
   --color-black: rgba(0, 0, 0, 1);
   --color-cream-50: rgba(252, 252, 249, 1);
@@ -138,7 +137,6 @@ a:hover {
   src: url('https://r2cdn.perplexity.ai/fonts/FKGroteskNeue.woff2') format('woff2');
 }
 
-/* Header */
 header {
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-teal-700) 100%);
   color: var(--color-white);
@@ -195,7 +193,6 @@ nav a.active {
   transform: translateY(-2px);
 }
 
-/* Contact Hero */
 .contact-hero {
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-teal-600) 100%);
   color: var(--color-white);
@@ -231,7 +228,6 @@ nav a.active {
   margin: 0 auto;
 }
 
-/* Container */
 .container {
   width: 100%;
   max-width: 1280px;
@@ -239,7 +235,6 @@ nav a.active {
   padding: 0 var(--space-16);
 }
 
-/* Contact Container Grid */
 .contact-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -247,14 +242,12 @@ nav a.active {
   margin-bottom: var(--space-32);
 }
 
-/* Contact Information Section */
 .contact-info-section {
   display: flex;
   flex-direction: column;
   gap: var(--space-16);
 }
 
-/* Contact Card */
 .contact-card {
   background: var(--color-surface);
   border-radius: var(--radius-lg);
@@ -331,7 +324,6 @@ nav a.active {
   font-weight: var(--font-weight-semibold);
 }
 
-/* Contact Form Section */
 .contact-form-section {
   background: var(--color-surface);
   border-radius: var(--radius-lg);
@@ -421,7 +413,6 @@ select.form-control {
   background: var(--color-primary-active);
 }
 
-/* Map Section */
 .map-section {
   margin-bottom: var(--space-32);
 }
@@ -463,7 +454,6 @@ select.form-control {
   border: none;
 }
 
-/* Departments Section */
 .departments-section {
   margin-bottom: var(--space-32);
 }
@@ -548,7 +538,6 @@ select.form-control {
   text-decoration: underline;
 }
 
-/* Footer */
 footer {
   background: var(--color-slate-900);
   color: var(--color-white);
@@ -592,7 +581,6 @@ footer {
   font-size: var(--font-size-sm);
 }
 
-/* Responsive */
 @media (max-width: 968px) {
   .contact-container {
     grid-template-columns: 1fr;

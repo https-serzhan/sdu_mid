@@ -1,5 +1,4 @@
 :root {
-  /* Primitive Color Tokens */
   --color-white: rgba(255, 255, 255, 1);
   --color-black: rgba(0, 0, 0, 1);
   --color-cream-50: rgba(252, 252, 249, 1);
@@ -133,7 +132,6 @@ a:hover {
   src: url('https://r2cdn.perplexity.ai/fonts/FKGroteskNeue.woff2') format('woff2');
 }
 
-/* Header */
 header {
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-teal-700) 100%);
   color: var(--color-white);
@@ -190,7 +188,6 @@ nav a.active {
   transform: translateY(-2px);
 }
 
-/* Hero Section */
 .courses-hero {
   background: linear-gradient(135deg, var(--color-teal-500) 0%, var(--color-teal-700) 100%);
   color: var(--color-white);
@@ -231,7 +228,6 @@ nav a.active {
   margin: 0 auto;
 }
 
-/* Container */
 .container {
   width: 100%;
   max-width: 1280px;
@@ -239,7 +235,6 @@ nav a.active {
   padding: 0 var(--space-16);
 }
 
-/* School Card */
 .school-card {
   background: var(--color-surface);
   padding: var(--space-32);
@@ -286,7 +281,6 @@ nav a.active {
   animation-delay: 0.4s;
 }
 
-/* School Header */
 .school-header {
   display: flex;
   align-items: center;
@@ -317,7 +311,6 @@ nav a.active {
   line-height: var(--line-height-tight);
 }
 
-/* Faculty Grid */
 .faculty-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -325,7 +318,6 @@ nav a.active {
   margin-top: var(--space-20);
 }
 
-/* Faculty Item */
 .faculty-item {
   background: var(--color-secondary);
   padding: var(--space-20) var(--space-24);
@@ -378,7 +370,6 @@ nav a.active {
   transform: scale(1.15);
 }
 
-/* Footer */
 footer {
   background: var(--color-slate-900);
   color: var(--color-white);
@@ -422,7 +413,6 @@ footer {
   font-size: var(--font-size-sm);
 }
 
-/* Animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -434,7 +424,6 @@ footer {
   }
 }
 
-/* Responsive */
 @media (max-width: 1200px) {
   .faculty-grid {
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));

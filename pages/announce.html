@@ -25,6 +25,7 @@
         </div>
     </header>
 
+
     <div class="announcements-hero">
         <div class="container">
             <h1>Announcements & News</h1>
@@ -32,9 +33,9 @@
         </div>
     </div>
 
+
     <main>
         <div class="container">
-            <!-- Filter Navigation -->
             <div class="filter-nav">
                 <button class="filter-btn active" data-filter="all">All Announcements</button>
                 <button class="filter-btn" data-filter="academic">Academic</button>
@@ -44,7 +45,7 @@
                 <button class="filter-btn" data-filter="general">General</button>
             </div>
 
-            <!-- Featured Announcement -->
+
             <div class="announcement-card featured-announcement">
                 <div class="announcement-header">
                     <span class="announcement-category">Featured</span>
@@ -67,9 +68,8 @@
                 </div>
             </div>
 
-            <!-- Announcements Grid -->
+
             <div class="announcements-grid">
-                <!-- Academic Announcement 1 -->
                 <article class="announcement-card academic" data-category="academic">
                     <div class="announcement-header">
                         <span class="announcement-category">Academic</span>
@@ -92,7 +92,7 @@
                     </div>
                 </article>
 
-                <!-- Event Announcement 1 -->
+
                 <article class="announcement-card event" data-category="event">
                     <div class="announcement-header">
                         <span class="announcement-category">Event</span>
@@ -115,7 +115,7 @@
                     </div>
                 </article>
 
-                <!-- Admission Announcement 1 -->
+
                 <article class="announcement-card admission" data-category="admission">
                     <div class="announcement-header">
                         <span class="announcement-category">Admissions</span>
@@ -138,7 +138,7 @@
                     </div>
                 </article>
 
-                <!-- Research Announcement 1 -->
+
                 <article class="announcement-card research" data-category="research">
                     <div class="announcement-header">
                         <span class="announcement-category">Research</span>
@@ -161,7 +161,7 @@
                     </div>
                 </article>
 
-                <!-- Event Announcement 2 -->
+
                 <article class="announcement-card event" data-category="event">
                     <div class="announcement-header">
                         <span class="announcement-category">Event</span>
@@ -184,7 +184,7 @@
                     </div>
                 </article>
 
-                <!-- Academic Announcement 2 -->
+
                 <article class="announcement-card academic" data-category="academic">
                     <div class="announcement-header">
                         <span class="announcement-category">Academic</span>
@@ -207,7 +207,7 @@
                     </div>
                 </article>
 
-                <!-- General Announcement 1 -->
+
                 <article class="announcement-card general" data-category="general">
                     <div class="announcement-header">
                         <span class="announcement-category">General</span>
@@ -230,7 +230,7 @@
                     </div>
                 </article>
 
-                <!-- Research Announcement 2 -->
+
                 <article class="announcement-card research" data-category="research">
                     <div class="announcement-header">
                         <span class="announcement-category">Research</span>
@@ -253,7 +253,7 @@
                     </div>
                 </article>
 
-                <!-- Admission Announcement 2 -->
+
                 <article class="announcement-card admission" data-category="admission">
                     <div class="announcement-header">
                         <span class="announcement-category">Admissions</span>
@@ -276,7 +276,7 @@
                     </div>
                 </article>
 
-                <!-- General Announcement 2 -->
+
                 <article class="announcement-card general" data-category="general">
                     <div class="announcement-header">
                         <span class="announcement-category">General</span>
@@ -299,7 +299,7 @@
                     </div>
                 </article>
 
-                <!-- Event Announcement 3 -->
+
                 <article class="announcement-card event" data-category="event">
                     <div class="announcement-header">
                         <span class="announcement-category">Event</span>
@@ -322,7 +322,7 @@
                     </div>
                 </article>
 
-                <!-- Academic Announcement 3 -->
+
                 <article class="announcement-card academic" data-category="academic">
                     <div class="announcement-header">
                         <span class="announcement-category">Academic</span>
@@ -347,6 +347,7 @@
             </div>
         </div>
     </main>
+
 
     <footer>
         <div class="footer-content">
@@ -374,21 +375,21 @@
         </div>
     </footer>
 
+
     <script>
-        // Filter functionality
         const filterButtons = document.querySelectorAll('.filter-btn');
         const announcementCards = document.querySelectorAll('.announcement-card:not(.featured-announcement)');
 
+
         filterButtons.forEach(button => {
             button.addEventListener('click', () => {
-                // Remove active class from all buttons
                 filterButtons.forEach(btn => btn.classList.remove('active'));
-                // Add active class to clicked button
                 button.classList.add('active');
+
 
                 const filterValue = button.getAttribute('data-filter');
 
-                // Filter cards
+
                 announcementCards.forEach(card => {
                     if (filterValue === 'all') {
                         card.style.display = 'flex';

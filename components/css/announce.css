@@ -1,5 +1,4 @@
 :root {
-  /* Primitive Color Tokens */
   --color-white: rgba(255, 255, 255, 1);
   --color-black: rgba(0, 0, 0, 1);
   --color-cream-50: rgba(252, 252, 249, 1);
@@ -138,7 +137,6 @@ a:hover {
   src: url('https://r2cdn.perplexity.ai/fonts/FKGroteskNeue.woff2') format('woff2');
 }
 
-/* Header */
 header {
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-teal-700) 100%);
   color: var(--color-white);
@@ -195,7 +193,6 @@ nav a.active {
   transform: translateY(-2px);
 }
 
-/* Announcements Hero */
 .announcements-hero {
   background: linear-gradient(135deg, var(--color-teal-500) 0%, var(--color-teal-700) 100%);
   color: var(--color-white);
@@ -241,7 +238,6 @@ nav a.active {
   animation: fadeInUp 0.8s var(--ease-standard);
 }
 
-/* Container */
 .container {
   width: 100%;
   max-width: 1280px;
@@ -249,7 +245,6 @@ nav a.active {
   padding: 0 var(--space-16);
 }
 
-/* Filter Navigation */
 .filter-nav {
   display: flex;
   justify-content: center;
@@ -286,7 +281,6 @@ nav a.active {
   box-shadow: var(--shadow-md);
 }
 
-/* Announcements Grid */
 .announcements-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -294,7 +288,6 @@ nav a.active {
   margin-bottom: var(--space-32);
 }
 
-/* Announcement Card */
 .announcement-card {
   background: var(--color-surface);
   border-radius: var(--radius-lg);
@@ -319,7 +312,6 @@ nav a.active {
 .announcement-card.research { border-left-color: var(--color-slate-900); }
 .announcement-card.general { border-left-color: var(--color-primary); }
 
-/* Announcement Header */
 .announcement-header {
   padding: var(--space-16);
   background: var(--color-secondary);
@@ -368,7 +360,6 @@ nav a.active {
   font-size: var(--font-size-lg);
 }
 
-/* Announcement Body */
 .announcement-body {
   padding: var(--space-16);
   flex-grow: 1;
@@ -392,7 +383,6 @@ nav a.active {
   font-size: var(--font-size-base);
 }
 
-/* Announcement Footer */
 .announcement-footer {
   padding: 0 var(--space-16) var(--space-16);
   display: flex;
@@ -431,7 +421,6 @@ nav a.active {
   gap: var(--space-6);
 }
 
-/* Featured Announcement */
 .featured-announcement {
   background: linear-gradient(135deg, var(--color-teal-500) 0%, var(--color-teal-700) 100%);
   color: var(--color-white);
@@ -486,7 +475,6 @@ nav a.active {
   color: var(--color-slate-900);
 }
 
-/* Footer */
 footer {
   background: var(--color-slate-900);
   color: var(--color-white);
@@ -530,7 +518,6 @@ footer {
   font-size: var(--font-size-sm);
 }
 
-/* Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -553,7 +540,6 @@ footer {
   }
 }
 
-/* Responsive */
 @media (max-width: 968px) {
   .announcements-hero h1 {
     font-size: var(--font-size-3xl);
